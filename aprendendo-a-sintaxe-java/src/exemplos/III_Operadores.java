@@ -1,3 +1,4 @@
+package exemplos;
 public class III_Operadores {
     public static void main(String[] args) {
 
@@ -103,7 +104,7 @@ public class III_Operadores {
         int precedencia = 10 + 3 * 2; // 16
         int precedenciaParenteses = (10 + 3) * 2; // 26
 
-        
+
 
 
 

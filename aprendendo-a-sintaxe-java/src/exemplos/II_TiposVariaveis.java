@@ -1,3 +1,4 @@
+package exemplos;
 public class II_TiposVariaveis {
     public static void main(String[] args) {
         double salarioMinimo = 2500.00;

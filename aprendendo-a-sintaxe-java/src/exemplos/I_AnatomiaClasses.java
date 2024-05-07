@@ -1,3 +1,4 @@
+package exemplos;
 public class I_AnatomiaClasses {
 
     public static void main (String[] args) {
