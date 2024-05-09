@@ -36,7 +36,6 @@ public class MetodosEx01 {
 
     }
 
-
     private static class SmartTv {
         private static int DEFAULT_VOLUME = 15;
         private static int DEFAULT_CHANNEL = 1;
