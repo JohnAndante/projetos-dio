@@ -6,7 +6,7 @@ import java.util.List;
 public class SomaNumeros {
     private List<Integer> numeroList = new ArrayList<>();
 
-    public void SomaNumeros() {
+    public SomaNumeros() {
         this.numeroList = new ArrayList<>();
     }
 
