@@ -1,12 +1,12 @@
 package dio.springboot;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import dio.springboot.app.aula02.ConversorJson;
-import dio.springboot.app.aula02.ViaCepResponse;
-import dio.springboot.app.aula03.SistemaMensagem;
+// import org.springframework.boot.CommandLineRunner;
+// import org.springframework.context.annotation.Bean;
+// import dio.springboot.app.aula02.ConversorJson;
+// import dio.springboot.app.aula02.ViaCepResponse;
+// import dio.springboot.app.aula03.SistemaMensagem;
 
 @SpringBootApplication
 public class PrimeirosPassosApplication {
@@ -42,13 +42,15 @@ public class PrimeirosPassosApplication {
 	 */
 
 	/* Aula 03 */
-	@Bean
-	public CommandLineRunner run(SistemaMensagem sistema) throws Exception {
-		return args -> {
-			sistema.enviarConfirmacaoCadastro();
-			sistema.enviarMensagemBoasVindas();
-			sistema.enviarConfirmacaoCadastro();
-		};
-	}
+	/*
+	 * @Bean
+	 * public CommandLineRunner run(SistemaMensagem sistema) throws Exception {
+	 * return args -> {
+	 * sistema.enviarConfirmacaoCadastro();
+	 * sistema.enviarMensagemBoasVindas();
+	 * sistema.enviarConfirmacaoCadastro();
+	 * };
+	 * }
+	 */
 
 }

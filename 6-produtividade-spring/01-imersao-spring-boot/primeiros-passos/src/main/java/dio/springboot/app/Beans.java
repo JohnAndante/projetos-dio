@@ -3,8 +3,7 @@ package dio.springboot.app;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
-
-// import com.google.gson.Gson;
+import com.google.gson.Gson;
 import dio.springboot.app.aula03.Remetente;
 
 /*
@@ -24,11 +23,14 @@ public class Beans {
      */
 
     /* Aula 02 */
-    /*
-     * @Bean public Gson gson() { return new Gson(); }
-     */
+
+    @Bean
+    public Gson gson() {
+        return new Gson();
+    }
 
     /* Aula 03 */
+
     @Bean
     /*
      * A anotação @Scope("prototype") indica que o Spring deve criar um novo objeto
@@ -36,10 +38,11 @@ public class Beans {
      */
     @Scope("prototype")
     public Remetente remetente() {
-        System.out.println("CRIANDO UM OBJETO REMETENTE");
+        // System.out.println("CRIANDO UM OBJETO REMETENTE");
         Remetente remetente = new Remetente();
-        remetente.setEmail("noreply@dio.com.br");
-        remetente.setNome("Digital Innovation One");
+        // remetente.setEmail("noreply@dio.com.br");
+        // remetente.setNome("Digital Innovation One");
         return remetente;
     }
+
 }

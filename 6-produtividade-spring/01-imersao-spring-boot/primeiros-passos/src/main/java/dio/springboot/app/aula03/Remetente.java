@@ -1,7 +1,5 @@
 package dio.springboot.app.aula03;
 
-import org.springframework.stereotype.Component;
-
 public class Remetente {
     private String nome;
     private String email;
