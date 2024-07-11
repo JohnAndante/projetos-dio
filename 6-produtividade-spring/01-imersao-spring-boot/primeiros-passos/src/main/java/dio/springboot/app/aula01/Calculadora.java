@@ -1,4 +1,4 @@
-package dio.springboot;
+package dio.springboot.app.aula01;
 
 import org.springframework.stereotype.Component;
 

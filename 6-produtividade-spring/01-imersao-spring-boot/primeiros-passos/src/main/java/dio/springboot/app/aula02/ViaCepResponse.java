@@ -1,4 +1,4 @@
-package dio.springboot.app;
+package dio.springboot.app.aula02;
 
 public class ViaCepResponse {
     private String cep;

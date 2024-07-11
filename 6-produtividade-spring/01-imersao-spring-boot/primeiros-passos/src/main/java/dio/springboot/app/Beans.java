@@ -2,8 +2,10 @@ package dio.springboot.app;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
-import com.google.gson.Gson;
+// import com.google.gson.Gson;
+import dio.springboot.app.aula03.Remetente;
 
 /*
  * Anotação adicionada para garantir que o Spring entenda que essa classe é responsável
@@ -20,8 +22,24 @@ public class Beans {
      * que não é gerenciado pelo Spring,
      * ou seja, que não é um componente (com a anotação @component)
      */
+
+    /* Aula 02 */
+    /*
+     * @Bean public Gson gson() { return new Gson(); }
+     */
+
+    /* Aula 03 */
     @Bean
-    public Gson gson() {
-        return new Gson();
+    /*
+     * A anotação @Scope("prototype") indica que o Spring deve criar um novo objeto
+     * sempre que for injetado em outra classe.
+     */
+    @Scope("prototype")
+    public Remetente remetente() {
+        System.out.println("CRIANDO UM OBJETO REMETENTE");
+        Remetente remetente = new Remetente();
+        remetente.setEmail("noreply@dio.com.br");
+        remetente.setNome("Digital Innovation One");
+        return remetente;
     }
 }

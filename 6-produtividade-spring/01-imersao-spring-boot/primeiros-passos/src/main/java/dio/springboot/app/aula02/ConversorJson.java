@@ -1,4 +1,4 @@
-package dio.springboot.app;
+package dio.springboot.app.aula02;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
