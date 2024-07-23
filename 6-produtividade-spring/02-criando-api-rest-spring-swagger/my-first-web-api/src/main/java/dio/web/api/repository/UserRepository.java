@@ -11,6 +11,10 @@ import dio.web.api.model.User;
 public class UserRepository {
 
     public void save(User user) {
+        if (user == null) {
+            throw new IllegalArgumentException("User cannot be null");
+        }
+
         if (user.getId() == null) {
             System.out.println("Saving the user: " + user);
         } else {
@@ -19,6 +23,10 @@ public class UserRepository {
     }
 
     public void deleteById(Integer id) {
+        if (id == null) {
+            throw new IllegalArgumentException("Id cannot be null");
+        }
+
         System.out.println("Deleting the user with id: " + id);
     }
 
@@ -31,10 +39,18 @@ public class UserRepository {
     }
 
     public User findById(Integer id) {
+        if (id == null) {
+            throw new IllegalArgumentException("Id cannot be null");
+        }
+
         return new User("joao", "123123");
     }
 
     public User findByLogin(String login) {
+        if (login == null) {
+            throw new IllegalArgumentException("Login cannot be null");
+        }
+
         return new User("joao", "123123");
     }
 
